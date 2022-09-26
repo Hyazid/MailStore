@@ -1,0 +1,33 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    
+}
+
+
+.table-view   {
+    
+    -fx-background-color: #ffffff;
+    -fx-background-radius: 7px 7px 0px 0px;
+    -fx-background-insets: 0 11px 0 0;
+    -fx-padding: 0 0 5px 0;
+     -fx-border: 3px ;
+    -fx-border-color: #666666;
+    
+}
+.column-header{
+    -fx-background-color: #ffffff;
+    -fx-border: 3px ;
+    -fx-border-color: #666666;
+    
+}
+#paneOption1{
+    -fx-background-color: #ddf4dd;
+    -fx-border: 15px ;
+    -fx-border-color: #ffffff;
+    -fx-border-radius: 7px 7px 7px 7px;
+    
+}
+

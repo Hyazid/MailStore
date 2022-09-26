@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="502.0" prefWidth="941.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calender.CourrierINController">
+   <children>
+      <TableView layoutX="14.0" layoutY="83.0" prefHeight="405.0" prefWidth="725.0" stylesheets="@courrierin.css">
+        <columns>
+          <TableColumn prefWidth="85.0" text="Numéro" />
+            <TableColumn prefWidth="187.0" text="Expediteur" />
+            <TableColumn prefWidth="170.0" text="Objet" />
+            <TableColumn prefWidth="139.0" text="Date d'arrivé" />
+          <TableColumn prefWidth="144.0" text="Date d'arrivé" />
+        </columns>
+      </TableView>
+      <Text layoutX="23.0" layoutY="49.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Courrier Entrant" underline="true">
+         <font>
+            <Font name="Arial Black" size="32.0" />
+         </font>
+      </Text>
+      <Pane id="paneOption1" fx:id="paneOption" layoutX="751.0" layoutY="14.0" prefHeight="243.0" prefWidth="190.0" stylesheets="@courrierin.css">
+         <children>
+            <JFXButton id="addBtnCouirrierIN" buttonType="RAISED" layoutX="23.0" layoutY="14.0" onAction="#ajouterCourrier" prefHeight="49.0" prefWidth="136.0" style="-fx-background-color: green;" text="+" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="26.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="addBtnCouirrierModify" buttonType="RAISED" layoutX="23.0" layoutY="72.0" onAction="#modifierCourier" prefHeight="49.0" prefWidth="136.0" style="-fx-background-color: blue;" text="Modifier" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="addBtnCouirrierPrint" buttonType="RAISED" layoutX="23.0" layoutY="185.0" onAction="#imprimer" prefHeight="49.0" prefWidth="136.0" style="-fx-background-color: red;" text="imprimer" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="21.0" />
+               </font>
+            </JFXButton>
+            <JFXButton id="addBtnCouirrierDel" buttonType="RAISED" layoutX="23.0" layoutY="129.0" onAction="#supprimerCourrier" prefHeight="49.0" prefWidth="136.0" style="-fx-background-color: orange;" text="supprimer" textFill="WHITE">
+               <font>
+                  <Font name="SansSerif Bold" size="21.0" />
+               </font>
+            </JFXButton>
+         </children></Pane>
+      <ImageView fitHeight="188.0" fitWidth="133.0" layoutX="751.0" layoutY="261.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../../../Desktop/exercices/ex-nb.gif" />
+         </image></ImageView>
+   </children>
+</Pane>

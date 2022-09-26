@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="701.0" prefWidth="1201.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calender.PrincipalFXMLController">
+   <top>
+      <Pane prefHeight="138.0" prefWidth="1201.0" style="-fx-background-color: #02a3ee;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="61.0" layoutY="79.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Calender Organizer" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="43.0" />
+               </font>
+            </Text>
+            <Text fill="WHITE" layoutX="466.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="For CCLS Bouira">
+               <font>
+                  <Font name="System Bold" size="20.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane prefHeight="563.0" prefWidth="268.0" style="-fx-background-color: #ff8b00;" BorderPane.alignment="CENTER">
+         <children>
+            <VBox layoutX="-3.0" prefHeight="563.0" prefWidth="272.0" spacing="25.0" style="-fx-background-color: #ee4d02;">
+               <children>
+                  <JFXButton buttonType="RAISED" prefHeight="62.0" prefWidth="220.0" ripplerFill="WHITE" style="-fx-background-color: #02eec3;" text="Général" textFill="#756656" underline="true">
+                     <font>
+                        <Font name="SansSerif Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" onAction="#onCourrier" prefHeight="62.0" prefWidth="220.0" style="-fx-background-color: #02eec3;" text="Courrier" textFill="#8a5638" underline="true">
+                     <font>
+                        <Font name="SansSerif Bold" size="24.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" prefHeight="62.0" prefWidth="220.0" style="-fx-background-color: #02eec3;" text="Options" textFill="#79524a" underline="true">
+                     <font>
+                        <Font name="SansSerif Bold" size="25.0" />
+                     </font>
+                  </JFXButton>
+                  <JFXButton buttonType="RAISED" prefHeight="62.0" prefWidth="220.0" style="-fx-background-color: #02eec3;" text="a propos " textFill="#79524a" underline="true">
+                     <font>
+                        <Font name="SansSerif Bold" size="22.0" />
+                     </font></JFXButton>
+               </children>
+               <padding>
+                  <Insets left="25.0" right="25.0" top="70.0" />
+               </padding>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane fx:id="paneContainer" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

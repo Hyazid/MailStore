@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.net.URL?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="paneContainerCourrier" prefHeight="572.0" prefWidth="951.0" style="-fx-background-color: white;" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calender.CourierFXMLController">
+    <stylesheets>
+        <URL value="@courierfxml.css" />
+    </stylesheets>
+   <children>
+      <HBox layoutY="2.0" prefHeight="77.0" prefWidth="957.0">
+         <children>
+            <JFXButton buttonType="RAISED" onAction="#courierEntrant" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: #02eec3;" text="Courrier entrant" underline="true">
+               <HBox.margin>
+                  <Insets left="40.0" right="15.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#corrierSortant" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: #02eec3;" text="Courier sortant" underline="true">
+               <HBox.margin>
+                  <Insets left="60.0" right="15.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="15.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" onAction="#Divers" prefHeight="48.0" prefWidth="149.0" style="-fx-background-color: #02eec3;" text="Divers" underline="true">
+               <HBox.margin>
+                  <Insets left="60.0" top="10.0" />
+               </HBox.margin>
+               <font>
+                  <Font name="SansSerif Bold" size="15.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </HBox>
+      <Pane fx:id="panelContainerCourrier" layoutX="3.0" layoutY="79.0" prefHeight="483.0" prefWidth="950.0" style="-fx-background-color: white;" />
+   </children>
+</AnchorPane>

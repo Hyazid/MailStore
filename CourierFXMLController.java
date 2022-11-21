@@ -1,10 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package calender;
 
+package calender;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -31,9 +26,9 @@ public class CourierFXMLController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         try {
-            Parent fxml = FXMLLoader.load(getClass().getResource("CourrierIN.fxml"));
-            panelContainerCourrier.getChildren().removeAll();
-            panelContainerCourrier.getChildren().setAll(fxml);
+         Parent fxml = FXMLLoader.load(getClass().getResource("CourrierIN.fxml"));
+         panelContainerCourrier.getChildren().removeAll();
+         panelContainerCourrier.getChildren().setAll(fxml);
         } catch (IOException ex) {
             Logger.getLogger(CourierFXMLController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -42,16 +37,22 @@ public class CourierFXMLController implements Initializable {
     @FXML
     private void courierEntrant(ActionEvent event) throws IOException {
         Parent fxml = FXMLLoader.load(getClass().getResource("CourrierIN.fxml"));
-            panelContainerCourrier.getChildren().removeAll();
-            panelContainerCourrier.getChildren().setAll(fxml);
+        panelContainerCourrier.getChildren().removeAll();
+        panelContainerCourrier.getChildren().setAll(fxml);
     }
 
     @FXML
-    private void corrierSortant(ActionEvent event) {
+    private void corrierSortant(ActionEvent event) throws IOException {
+        Parent fxml = FXMLLoader.load(getClass().getResource("Courrierout.fxml"));
+        panelContainerCourrier.getChildren().removeAll();
+        panelContainerCourrier.getChildren().setAll(fxml);
     }
 
     @FXML
-    private void Divers(ActionEvent event) {
+    private void Divers(ActionEvent event) throws IOException {
+        Parent fxml =FXMLLoader.load(getClass().getResource("divers.fxml"));
+        panelContainerCourrier.getChildren().removeAll();
+        panelContainerCourrier.getChildren().setAll(fxml);
     }
     
 }

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<Pane fx:id="paneContainer" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="381.0" prefWidth="704.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calender.DeleteCourrierController">
+   <children>
+      <Label layoutX="21.0" layoutY="25.0" text="Supression" underline="true">
+         <font>
+            <Font name="Arial Bold" size="27.0" />
+         </font>
+      </Label>
+      <TextField fx:id="NCourrier" layoutX="181.0" layoutY="64.0" onKeyPressed="#search" prefHeight="32.0" prefWidth="171.0" />
+      <Text layoutX="19.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Numero Courrier:">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <Text layoutX="371.0" layoutY="86.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Type de Courrier:">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </Text>
+      <Line endX="334.0" layoutX="355.0" layoutY="109.0" startX="-327.0" />
+      <TextField fx:id="expediteur" disable="true" layoutX="136.0" layoutY="131.0" prefHeight="32.0" prefWidth="165.0" />
+      <Text layoutX="28.0" layoutY="152.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Expediteur:">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="destinataire" disable="true" layoutX="136.0" layoutY="176.0" prefHeight="32.0" prefWidth="165.0" />
+      <Text layoutX="24.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="destinataire:">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="objet" disable="true" layoutX="136.0" layoutY="225.0" prefHeight="32.0" prefWidth="165.0" />
+      <Text layoutX="28.0" layoutY="246.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Objet:">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="dateArrivage" disable="true" layoutX="455.0" layoutY="129.0" prefHeight="32.0" prefWidth="165.0" />
+      <Text layoutX="336.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date Arrivage:">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="dateEnvoi" disable="true" layoutX="455.0" layoutY="174.0" onAction="#dateEnvoi" prefHeight="32.0" prefWidth="165.0" />
+      <Text layoutX="343.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date d'envoi:">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="dateArcchivage" disable="true" layoutX="455.0" layoutY="223.0" prefHeight="32.0" prefWidth="165.0" />
+      <Text layoutX="321.0" layoutY="244.0" strokeType="OUTSIDE" strokeWidth="0.0" text="date archivage:">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="24.0" layoutY="291.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Chemin du Fichier">
+         <font>
+            <Font name="Arial Bold" size="17.0" />
+         </font>
+      </Text>
+      <TextField fx:id="fichier" disable="true" layoutX="184.0" layoutY="269.0" prefHeight="32.0" prefWidth="359.0" />
+      <JFXButton buttonType="RAISED" layoutX="184.0" layoutY="327.0" onAction="#supprimer" prefHeight="44.0" prefWidth="150.0" ripplerFill="#9a8c8c" style="-fx-background-color: red;" text="Supprimer" textFill="#f5f5f5">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXButton buttonType="RAISED" layoutX="380.0" layoutY="327.0" onAction="#Annuler" prefHeight="44.0" prefWidth="150.0" ripplerFill="#f8f4f4" style="-fx-background-color: #f8f4f4;" text="Annuler" textFill="#393636">
+         <font>
+            <Font name="Arial Bold" size="18.0" />
+         </font>
+      </JFXButton>
+      <JFXComboBox fx:id="typeCourrier" focusColor="#1d3479" labelFloat="true" layoutX="526.0" layoutY="68.0" prefHeight="25.0" prefWidth="147.0" promptText="choisir..." unFocusColor="#975555" />
+      <Label fx:id="type" layoutX="572.0" layoutY="33.0" prefHeight="17.0" prefWidth="64.0" text="Label" />
+   </children>
+</Pane>

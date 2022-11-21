@@ -53,28 +53,38 @@
                   <Font name="SansSerif Regular" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="dateAr" layoutX="249.0" layoutY="118.0">
+            <TextField fx:id="dateAr" layoutX="249.0" layoutY="106.0">
                <font>
                   <Font name="SansSerif Regular" size="13.0" />
                </font>
             </TextField>
-            <TextField fx:id="dateArrchive" layoutX="249.0" layoutY="159.0">
+            <TextField fx:id="dateArrchive" layoutX="249.0" layoutY="153.0">
                <font>
                   <Font name="SansSerif Regular" size="13.0" />
                </font>
             </TextField>
             <JFXButton buttonType="RAISED" layoutX="427.0" layoutY="26.0" onAction="#ajouterFichier" prefHeight="43.0" prefWidth="168.0" style="-fx-background-color: grey;" text=" Ajouter le fichier" />
-            <JFXButton buttonType="RAISED" layoutX="129.0" layoutY="225.0" onAction="#AjouterCourrier" prefHeight="52.0" prefWidth="142.0" style="-fx-background-color: green;" text="Ajouter" textFill="WHITE" underline="true">
+            <JFXButton buttonType="RAISED" layoutX="129.0" layoutY="248.0" onAction="#AjouterCourrier" prefHeight="52.0" prefWidth="142.0" style="-fx-background-color: green;" text="Ajouter" textFill="WHITE" underline="true">
                <font>
                   <Font name="SansSerif Bold" size="22.0" />
                </font>
             </JFXButton>
-            <JFXButton buttonType="RAISED" layoutX="366.0" layoutY="225.0" onAction="#annuler" prefHeight="52.0" prefWidth="142.0" style="-fx-background-color: red;" text="Annuler" textFill="#f5f5f5" underline="true">
+            <JFXButton buttonType="RAISED" layoutX="366.0" layoutY="248.0" onAction="#annuler" prefHeight="52.0" prefWidth="142.0" style="-fx-background-color: red;" text="Annuler" textFill="#f5f5f5" underline="true">
                <font>
                   <Font name="SansSerif Bold" size="22.0" />
                </font>
             </JFXButton>
             <Label fx:id="fileLabel" layoutX="427.0" layoutY="71.0" prefHeight="34.0" prefWidth="166.0" text="Label" />
+            <Label layoutX="75.0" layoutY="205.0" prefHeight="27.0" prefWidth="163.0" text="Fichier à archivé" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addFile" layoutX="249.0" layoutY="206.0" promptText="cliquer sur ajouter un fichier ">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </TextField>
          </children></Pane>
    </center>
 </BorderPane>

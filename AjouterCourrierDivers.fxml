@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<BorderPane fx:id="mainStage" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="calender.AjouterCourrierDiversController">
+   <top>
+      <Pane prefHeight="86.0" prefWidth="600.0" style="-fx-background-color: green;" BorderPane.alignment="CENTER">
+         <children>
+            <Text fill="WHITE" layoutX="180.0" layoutY="52.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Ajouter un Courrier" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="26.0" />
+               </font>
+            </Text>
+         </children>
+      </Pane>
+   </top>
+   <center>
+      <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label layoutX="150.0" layoutY="14.0" prefHeight="27.0" prefWidth="109.0" text="Expediteur:" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="194.0" layoutY="97.0" prefHeight="27.0" prefWidth="62.0" text="Objet:" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="133.0" layoutY="135.0" prefHeight="27.0" prefWidth="123.0" text="Date d'arrivé:" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label layoutX="96.0" layoutY="175.0" prefHeight="27.0" prefWidth="163.0" text="Date d'archivage:" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="expediteur" layoutX="260.0" layoutY="21.0">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="objet" layoutX="260.0" layoutY="104.0">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dateAr" layoutX="259.0" layoutY="142.0">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="dateArrchive" layoutX="260.0" layoutY="182.0">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="96.0" layoutY="217.0" prefHeight="27.0" prefWidth="163.0" text="Fichier à archivé" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="addFile" layoutX="259.0" layoutY="225.0" promptText="cliquer sur ajouter un fichier ">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </TextField>
+            <Label layoutX="143.0" layoutY="57.0" prefHeight="27.0" prefWidth="124.0" text="Destinataire:" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="destinataire" layoutX="260.0" layoutY="64.0">
+               <font>
+                  <Font name="SansSerif Regular" size="13.0" />
+               </font>
+            </TextField>
+            <JFXButton buttonType="RAISED" layoutX="434.0" layoutY="29.0" onAction="#ajouterFichier" prefHeight="43.0" prefWidth="156.0" style="-fx-background-color: grey;" text=" Ajouter le fichier" />
+            <JFXButton buttonType="RAISED" layoutX="147.0" layoutY="257.0" onAction="#AjouterCourrier" prefHeight="48.0" prefWidth="116.0" style="-fx-background-color: green;" text="Ajouter" textFill="WHITE" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="22.0" />
+               </font>
+            </JFXButton>
+            <JFXButton buttonType="RAISED" layoutX="390.0" layoutY="255.0" onAction="#annuler" prefHeight="51.0" prefWidth="120.0" style="-fx-background-color: red;" text="Annuler" textFill="#f5f5f5" underline="true">
+               <font>
+                  <Font name="SansSerif Bold" size="22.0" />
+               </font>
+            </JFXButton>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
